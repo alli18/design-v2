@@ -92,6 +92,7 @@ ul.my-navbar li {
     padding: 0;
     margin: 0;
     flex: 1;
+    text-align: center;
 }
 
 /* Hide submenu, leave this to kmom02 */
