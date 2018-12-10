@@ -19,10 +19,8 @@ views:
 Om
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+[FIGURE src="image/dbwebb-se.png?w=300" class="right" caption="Kursindex på dbwebb.se"]
 
-Skriv några kloka ord om kursen?
+Detta är en webbsida för kursen [design](https://github.com/dbwebb-se/design) på [BTH](https://bth.se). 
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
-
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+Jag har också en [länk till mitt repository på Github](https://github.com/alli18/design-v2) för kursen. Här kommer jag att tagga upp resultatet av alla kursmoment. 
