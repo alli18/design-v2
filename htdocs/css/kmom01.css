@@ -5,6 +5,95 @@
  * to style up the website so it is useable.
  */
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, serif;
+}
+
+body {
+    background: #eee;
+    margin: 0;
+}
+
+a {
+    color: #ae2d40;
+    text-decoration: none;
+    border-bottom: 1px transparent;
+}
+
+a:visited {
+    color: #671b27;
+}
+
+a:hover {
+    color: #3b141d;
+    border-bottom: 1px solid #3b141d;
+}
+
+/** Figure */
+figure {
+    margin: 0;
+}
+
+figure a:hover {
+    border-bottom: 0;
+}
+
+/** generic style for common elemens **/
+.columns {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+/** Header-elements**/
+.region-header-col-1 {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.site-logo-text {
+    font-size: 46px;
+}
+
+.site-logo-text a:hover {
+    border-bottom: 0;
+}
+
+.site-logo-text .site-logo-text-icon {
+    display: none;
+}
+
+.wrap-all {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+ul.my-navbar {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    margin: 16px 0;
+}
+
+ul.my-navbar li {
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
     display: none;
@@ -13,4 +102,20 @@
 /* Hide responsive/mobile menu, leave this to kmom02 */
 .rm-navbar-max {
     display: none;
+}
+
+/** Main **/
+.region-main {
+    padding: 16px;
+}
+
+/** Footer **/
+.region-footer {
+    background: #dfe4e4;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.region-footer .site-footer {
+    text-align: center;
 }
