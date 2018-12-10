@@ -1,10 +1,19 @@
 ---
 title: "Min fina titel"
+views:
+    byline:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta: 
+                type: single
+                route: block/byline
 ---
 Min me-sida i kursen design
 =========================
 
-[FIGURE src="https://avatars1.githubusercontent.com/u/873043?s=460&v=4" class="right" caption="Bild på mig"]
+[FIGURE src="image/kalmar.jpg?w=500" class="right" caption="Bildkälla: Kalmar Läns Museum"]
 
 Alexander heter jag. Född i kalmar, uppväxt i Göteborg, bor i Lund.
 
@@ -12,3 +21,4 @@ Jag har sysslat med system- och webbutveckling professionellt i lite drygt 12 å
 
 Just nu har jag fokus på frontend-utveckling med hjälp av Angular2+ och React. Av de två olika teknikerna uppskattar jag React mer.
 Min bakgrund är fullstack-utvecklare.
+
