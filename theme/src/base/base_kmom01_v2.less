@@ -24,13 +24,10 @@ body {
     font: 100.01%/1 @fontFamilyBody;
 }
 
-html, body, .wrap-all {
-    height: 100%;
-}
-
 a {
     color: @linkMainColor;
     text-decoration: none;
+    border-bottom: 1px transparent;
 }
 
 a:visited {
@@ -39,6 +36,7 @@ a:visited {
 
 a:hover {
     color: @linkMainHoverColor;
+    border-bottom: 1px solid @linkMainHoverColor;
 }
 
 /** Figure */

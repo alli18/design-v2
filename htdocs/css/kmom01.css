@@ -104,19 +104,3 @@ ul.my-navbar li {
 .rm-navbar-max {
     display: none;
 }
-
-/** Main **/
-.region-main {
-    padding: 16px;
-}
-
-/** Footer **/
-.region-footer {
-    background: #dfe4e4;
-    padding: 16px;
-    margin-top: 16px;
-}
-
-.region-footer .site-footer {
-    text-align: center;
-}

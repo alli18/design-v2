@@ -14,35 +14,6 @@
  * This stylesheet is for the design course and kmom01. Fill it with style
  * to style up the website so it is useable.
  */
-* {
-  box-sizing: border-box;
-}
-html {
-  font-family: Verdana, serif;
-}
-body {
-  background: #eee;
-  margin: 0;
-}
-/** Figure */
-figure {
-  margin: 0;
-}
-figure a:hover {
-  border-bottom: 0;
-}
-/** generic style for common elemens **/
-.columns {
-  display: flex;
-}
-.column {
-  flex: 1;
-}
-/** Header-elements**/
-.region-header-col-1 {
-  display: flex;
-  align-items: center;
-}
 .site-logo img {
   width: 100px;
   height: 100px;
@@ -55,10 +26,6 @@ figure a:hover {
 }
 .site-logo-text .site-logo-text-icon {
   display: none;
-}
-.wrap-all {
-  margin: 0 auto;
-  width: 1100px;
 }
 ul.my-navbar {
   display: flex;
@@ -82,19 +49,6 @@ ul.my-navbar li {
 .rm-navbar-max {
   display: none;
 }
-/** Main **/
-.region-main {
-  padding: 16px;
-}
-/** Footer **/
-.region-footer {
-  background: #dfe4e4;
-  padding: 16px;
-  margin-top: 16px;
-}
-.region-footer .site-footer {
-  text-align: center;
-}
 /**
  * Style for the stylechooser.
  */
@@ -110,16 +64,37 @@ ul.my-navbar li {
 /**
  * Base style to affect HTML elements on a general scale.
  */
+* {
+  box-sizing: border-box;
+}
 html {
   overflow-y: scroll;
-  background-color: #424242;
 }
 body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #fff;
-  font: 100.01%/1 serif;
+  background-color: #eee;
+  font: 100.01%/1 Verdana, sans-serif;
+}
+a {
+  color: #ae2d40;
+  text-decoration: none;
+  border-bottom: 1px transparent;
+}
+a:visited {
+  color: #671b27;
+}
+a:hover {
+  color: #3b141d;
+  border-bottom: 1px solid #3b141d;
+}
+/** Figure */
+figure {
+  margin: 0;
+}
+figure a:hover {
+  border-bottom: 0;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
@@ -129,55 +104,43 @@ body {
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
-/**
- * Variables
- */
-/**
- * General layout
- */
-.inner-wrap {
-  max-width: 1100px;
+/** Wrapper */
+.wrap-all {
   margin: 0 auto;
+  width: 1100px;
+}
+/**
+Generic styling for columns
+*/
+.columns {
+  display: flex;
+}
+.column {
+  flex: 1;
 }
 /**
  * Layout for responsive style through media queries.
  */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 320px) {
   .site-logo {
     display: none;
   }
 }
-/**
- * Show off the regions used in the website, to ease styling.
- */
-.regions .outer-wrap {
-  background-color: #f4e3c9;
-  border: 1px solid #e3b774;
+/** Main **/
+.region-main {
+  padding: 16px;
 }
-.regions .inner-wrap {
-  background-color: #f4e0e9;
-  border: 1px solid #d995b4;
+/** Footer **/
+.region-footer {
+  background: #dfe4e4;
+  padding: 16px;
+  margin-top: 16px;
 }
-.regions .region-header-col-1,
-.regions .region-header-col-2,
-.regions .region-header-col-3,
-.regions .region-flash,
-.regions .region-breadcrumb,
-.regions .region-flash-message,
-.regions .region-columns-above,
-.regions .region-main,
-.regions .region-after-main,
-.regions .region-columns-below,
-.regions .region-sidebar-left,
-.regions .region-sidebar-right,
-.regions .region-footer,
-.regions .region-footer-column-1,
-.regions .region-footer-column-2,
-.regions .region-footer-column-3 {
-  background-color: #b5dce1;
-  border: 1px solid #6cbac4;
-  color: #111;
+.region-footer .site-footer {
+  text-align: center;
 }
-/**
- * My own settings, not currently in their own module.
- */
+/** Header-elements **/
+.region-header-col-1 {
+  display: flex;
+  align-items: center;
+}
